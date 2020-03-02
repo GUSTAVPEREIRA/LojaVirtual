@@ -19,6 +19,7 @@ class _CardTileState extends State<CardTile> {
 
   @override
   Widget build(BuildContext context) {
+    CartModel.of(context).updatePrices();
     return Card(
       margin: EdgeInsets.symmetric(
         horizontal: 8.0,
